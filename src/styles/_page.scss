@@ -21,6 +21,11 @@ body {
   overflow-x: hidden;
 }
 
+/* stylelint-disable-next-line selector-max-id */
+body:has(#menu-toggle:checked) {
+  overflow: hidden;
+}
+
 .container {
   max-width: 280px;
   margin: 0 auto;
