@@ -2,21 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyBike</title>
+    <link rel="icon" href="src/images/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@500&display=swap"
       rel="stylesheet"
-      href="src/styles/main.scss"
     />
-    <script
-      src="src/scripts/main.js"
-      defer
-    ></script>
+    <link rel="stylesheet" href="src/styles/main.scss" />
+    <script src="src/scripts/main.js" defer></script>
   </head>
   <body>
-    <h1>Landing Page</h1>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <div class="page">
+      <header class="header">
+        <div class="container header__content">
+          <a href="#" class="header__logo">
+            <img
+              src="src/images/logo.svg"
+              alt="MyBike"
+              class="header__logo-img"
+            />
+          </a>
+
+          <div class="header__actions">
+            <a href="tel:+12345555555" class="header__phone">
+              <img src="src/images/icon-phone.svg" alt="Call us" />
+            </a>
+
+            <label for="menu-toggle" class="header__burger">
+              <img src="src/images/icon-burger.svg" alt="Open menu" />
+            </label>
+          </div>
+        </div>
+      </header>
+    </div>
   </body>
 </html>
