@@ -42,7 +42,9 @@
     display: flex;
     cursor: pointer;
 
-    img {
+    img,
+    svg {
+      display: block;
       width: 24px;
       height: 24px;
 
@@ -58,6 +60,22 @@
 
     &:hover {
       opacity: 0.7;
+    }
+  }
+
+  &__burger {
+    color: $color-text;
+
+    &-icon--hover {
+      opacity: 0;
+    }
+
+    &:hover &-icon--default {
+      opacity: 0;
+    }
+
+    &:hover &-icon--hover {
+      opacity: 1;
     }
   }
 }
