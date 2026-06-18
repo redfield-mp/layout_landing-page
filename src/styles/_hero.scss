@@ -4,7 +4,7 @@
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -16,6 +16,7 @@
     min-height: 628px;
     padding-bottom: 130px;
     margin-top: -$header-height;
+    background-position: center;
   }
 
   @include desktop {
