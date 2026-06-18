@@ -38,3 +38,17 @@ body:has(#menu-toggle:checked) {
     max-width: 1020px;
   }
 }
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+
+  @include tablet {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
