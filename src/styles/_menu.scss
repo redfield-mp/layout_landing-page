@@ -124,7 +124,6 @@
   }
 }
 
-/* stylelint-disable-next-line selector-max-id */
-#menu-toggle:checked ~ .page .menu {
+.menu:target {
   transform: translateX(0);
 }

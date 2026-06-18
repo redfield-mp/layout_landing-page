@@ -16,18 +16,16 @@
     <script src="src/scripts/main.js" defer></script>
   </head>
   <body>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-
     <div class="page">
-      <nav class="menu">
+      <nav class="menu" id="menu">
         <div class="menu__content container">
           <div class="menu__top">
             <a href="#" class="menu__logo">
               <img src="src/images/logo.svg" alt="MyBike" class="menu__logo-img" />
             </a>
-            <label for="menu-toggle" class="menu__close">
+            <a href="#" class="menu__close">
               <img src="src/images/icon-close.svg" alt="Close menu" class="menu__close-icon" />
-            </label>
+            </a>
           </div>
 
           <ul class="menu__nav">
@@ -60,9 +58,9 @@
               <img src="src/images/icon-phone.svg" alt="Call us" />
             </a>
 
-            <label for="menu-toggle" class="header__burger">
+            <a href="#menu" class="header__burger">
               <img src="src/images/icon-burger.svg" alt="Open menu" />
-            </label>
+            </a>
           </div>
         </div>
       </header>
@@ -93,13 +91,13 @@
             <h2 class="compare__title">Compare Bikes</h2>
             <div class="grid compare__grid">
               <article class="bike">
-                <div class="bike__image-wrapper">
+                <a href="#" class="bike__image-wrapper">
                   <img
                     src="src/images/bike-sporty.jpg"
                     alt="Sporty 4"
                     class="bike__image"
                   />
-                </div>
+                </a>
                 <h3 class="bike__name">Sporty 4</h3>
                 <p class="bike__description">
                   The iconic frame brought to a new performance height as a
@@ -109,13 +107,13 @@
               </article>
 
               <article class="bike">
-                <div class="bike__image-wrapper">
+                <a href="#" class="bike__image-wrapper">
                   <img
                     src="src/images/bike-town.jpg"
                     alt="Ride in town ST"
                     class="bike__image"
                   />
-                </div>
+                </a>
                 <h3 class="bike__name">Ride in town ST</h3>
                 <p class="bike__description">
                   An open frame for an upright riding position as the most
@@ -125,13 +123,13 @@
               </article>
 
               <article class="bike">
-                <div class="bike__image-wrapper">
+                <a href="#" class="bike__image-wrapper">
                   <img
                     src="src/images/bike-agile.jpg"
                     alt="Agile ride 3"
                     class="bike__image"
                   />
-                </div>
+                </a>
                 <h3 class="bike__name">Agile ride 3</h3>
                 <p class="bike__description">
                   The lightweight frame that has earned its street tread as a
@@ -214,6 +212,66 @@
 
             <div class="grid details__bottom">
               <a href="#" class="details__button">Explore</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+          <div class="container">
+            <div class="grid contacts__grid">
+              <h2 class="contacts__title">Contacts</h2>
+
+              <form class="contacts__form" onsubmit="this.reset(); return false;">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                  class="contacts__input"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  class="contacts__input"
+                />
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  required
+                  class="contacts__textarea"
+                ></textarea>
+                <button type="submit" class="contacts__button">Send</button>
+              </form>
+
+              <div class="contacts__info">
+                <div class="contacts__info-item">
+                  <p class="contacts__info-label">Phone</p>
+                  <a
+                    href="tel:+12345555555"
+                    class="contacts__info-value"
+                  >+1 234 5555-55-55</a>
+                </div>
+
+                <div class="contacts__info-item">
+                  <p class="contacts__info-label">Email</p>
+                  <a
+                    href="mailto:hello@miami.com"
+                    class="contacts__info-value"
+                  >hello@miami.com</a>
+                </div>
+
+                <div class="contacts__info-item">
+                  <p class="contacts__info-label">Address</p>
+                  <a
+                    href="https://maps.google.com/?q=400+first+ave+suite+700+Minneapolis+MN+55401"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contacts__info-value"
+                  >400 first ave. suite 700 Minneapolis, MN 55401</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>

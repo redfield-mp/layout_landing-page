@@ -21,8 +21,16 @@ body {
   overflow-x: hidden;
 }
 
-/* stylelint-disable-next-line selector-max-id */
-body:has(#menu-toggle:checked) {
+.hero,
+.about,
+.compare,
+.details,
+.contacts {
+  position: relative;
+  background-color: $color-background;
+}
+
+.page:has(.menu:target) {
   overflow: hidden;
 }
 
