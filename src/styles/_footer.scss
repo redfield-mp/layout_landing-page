@@ -1,0 +1,33 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  background-image: url('../images/footer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 200px;
+  padding-bottom: 32px;
+
+  @include tablet {
+    min-height: 360px;
+    padding-bottom: 48px;
+  }
+
+  @include desktop {
+    min-height: 480px;
+    padding-bottom: 64px;
+  }
+}
+
+.footer__copy {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: $color-text;
+}
