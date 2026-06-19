@@ -56,11 +56,30 @@
   }
 
   &__phone {
-    transition: opacity $transition;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+  }
 
-    &:hover {
-      opacity: 0.7;
+  &__phone-number {
+    display: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: $color-text;
+
+    @include desktop {
+      display: block;
+      opacity: 0;
+      transition: opacity $transition;
     }
+  }
+
+  &__phone:has(img:hover) &__phone-number {
+    opacity: 1;
   }
 
   &__burger {
